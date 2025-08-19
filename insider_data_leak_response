@@ -1,0 +1,80 @@
+# Incident Response Playbook – Insider Data Leak  
+**Organisation:** Tata  
+**Incident Type:** Insider-driven Data Exfiltration  
+**Framework Reference:** NIST SP 800-61 – Computer Security Incident Handling Guide
+
+---
+
+## 1. Purpose
+Provide a structured response for incidents where customer financial data may have been intentionally or accidentally leaked by an internal employee or contractor within Tata.
+
+---
+
+## 2. Trigger (Detection Events)
+- Internal whistle-blower reports suspicious staff behaviour
+- Manager flags unusual access/download patterns by employee
+- SIEM or DLP tool shows large outbound transfers from internal systems
+
+---
+
+## 3. Initial Triage and Analysis
+| Action | Owner |
+|-------|------|
+| Confirm validity of report                        | Incident Handler       |
+| Identify employee account activity via logs       | SOC Analyst            |
+| Review recent data downloads/exported files       | Forensic Analyst       |
+| Preserve evidence (emails, logs, files)           | Security Investigator  |
+
+---
+
+## 4. Containment
+- Restrict employee access to sensitive systems immediately  
+- Disable remote access, VPN or USB usage  
+- Collect forensic image of employee workstation  
+- Inform HR for parallel employee management procedures
+
+---
+
+## 5. Eradication
+- Remove the employee’s accounts and tokens  
+- Block continued data exfiltration attempts on affected systems  
+- Secure third-party access channels (email forwarding, cloud sync)
+
+---
+
+## 6. Recovery
+- Assess exact data leaked (type and volume)  
+- Notify legal team & Data Protection Officer  
+- Begin controlled disclosure to customers/regulators (if required)  
+- Ensure systems secured before granting team access back
+
+---
+
+## 7. Post-Incident Actions
+- Disciplinary or legal proceedings via HR/Legal  
+- Internal lessons learned meeting  
+- Update insider threat detection rules (UEBA/DLP)  
+- Conduct refresher training on acceptable data handling practices
+
+---
+
+## 8. Escalation Matrix
+
+| Level  | Stakeholder                 | Contact Method      |
+|--------|----------------------------|----------------------|
+| Tier 1 | SOC Analyst / DLP Operator | Slack / SIEM alert   |
+| Tier 2 | Tata IT Security Team      | Phone / Email        |
+| Tier 3 | HR + Legal                 | Confidential Brief   |
+| Tier 4 | CISO                       | Executive Escalation |
+
+---
+
+## 9. Tools / Platforms Used
+- Splunk SIEM / User Behaviour Monitoring
+- DLP Solution (Forcepoint / Symantec or equivalent)
+- Forensic analysis tools (FTK / Encase)
+- HR and Legal coordination platform (ServiceNow / Jira)
+
+---
+
+*Created by Dorcas Olujimi*
