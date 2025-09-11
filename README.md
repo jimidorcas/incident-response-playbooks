@@ -2,7 +2,7 @@
 # Incident Response Playbooks (Tata)
 
 A portfolio of incident response playbooks created using the NIST SP 800-61 framework.  
-These playbooks demonstrate my capability to document, analyse and guide the response process after a cybersecurity detection — across common attack scenarios.
+These playbooks demonstrate my capability to document, analyse and guide the response process after a cybersecurity detection - across common attack scenarios.
 
 ---
 
