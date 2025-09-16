@@ -1,0 +1,66 @@
+# 🔒 Incident Response Playbook – Ransomware Attack
+
+## 📌 Scenario
+An employee opens a malicious email attachment that executes ransomware on their workstation.  
+The ransomware encrypts files locally and begins propagating across shared drives, displaying a ransom note demanding payment in cryptocurrency.  
+
+---
+
+## 🔎 NIST CSF Phases
+
+### 1. Identify
+- Alerts from antivirus/EDR tools indicating unusual file encryption.  
+- Multiple users reporting locked files or ransom notes.  
+- Unusual spikes in file system activity (high CPU, mass file renames).  
+- Review of SIEM logs for indicators of compromise (IOCs).  
+
+---
+
+### 2. Protect
+- Ensure regular backups are performed and stored offline.  
+- Restrict administrative privileges to limit ransomware spread.  
+- Apply email filtering to block suspicious attachments.  
+- Train employees to identify and report suspicious emails.  
+
+---
+
+### 3. Detect
+- SIEM alerts for mass file changes or suspicious PowerShell commands.  
+- Antivirus/EDR detection of ransomware binaries.  
+- Monitoring logs for suspicious extensions (.locked, .crypt, etc.).  
+- Detection of communication attempts to known ransomware C2 servers.  
+
+---
+
+### 4. Respond
+- Immediately isolate infected endpoints from the network (disconnect Ethernet/Wi-Fi).  
+- Disable file sharing on impacted systems.  
+- Preserve forensic evidence:  
+  - Collect affected logs, memory dumps, and encrypted file samples.  
+- Reset affected user credentials.  
+- Notify management, legal, and compliance teams.  
+- If financial/PII data is involved, prepare regulatory notifications (GDPR, ICO, etc.).  
+
+---
+
+### 5. Recover
+- Restore files from clean, verified backups.  
+- Monitor restored systems for reinfection attempts.  
+- Apply security patches to exploited vulnerabilities.  
+- Conduct post-incident review with lessons learned.  
+- Update policies and training to reduce recurrence.  
+
+---
+
+## 🔑 Key Takeaways
+- Ransomware spreads quickly → speed of **detection and isolation** is critical.  
+- Backups are the strongest line of recovery.  
+- Incident recovery must include both technical fixes and **business communication**.  
+- Lessons learned should update awareness training and technical controls.  
+
+---
+
+## 📚 References
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)  
+- [MITRE ATT&CK: Ransomware (T1486)](https://attack.mitre.org/techniques/T1486/)  
+- [CISA Ransomware Guidance](https://www.cisa.gov/stopransomware)  
