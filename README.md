@@ -1,8 +1,7 @@
 
 # Incident Response Playbooks (Tata)
 
-A portfolio of incident response playbooks created using the NIST SP 800-61 framework.  
-These playbooks demonstrate my capability to document, analyse and guide the response process after a cybersecurity detection - across common attack scenarios.
+Phishing often escalates into malware infections, requiring a structured response. I created an Incident Response Playbook aligned with the NIST CSF framework to guide teams through the Identify, Protect, Detect, Respond, and Recover phases. The playbook covers detection (suspicious logins, PowerShell execution), response (isolating endpoints, resetting credentials), and recovery (restoring backups, updating awareness). This demonstrates my ability to plan, document, and communicate clear workflows for handling cyber incidents.
 
 ---
 
