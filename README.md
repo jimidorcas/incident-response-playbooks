@@ -35,4 +35,4 @@ All playbooks align with **NIST SP 800-61 Computer Security Incident Handling Gu
 
 ## 👩🏽‍💻 About the Author
 
-Created by **Dorcas Olujimi**, Cybersecurity Analyst.
+Created by **Dorcas Olujimi**, Cybersecurity Analyst
